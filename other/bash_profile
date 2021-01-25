@@ -1,0 +1,24 @@
+conda activate py36
+
+	
+alias ls='ls -G'
+alias ll='ls -lhG'
+alias hs="cd /Users/mirko/Workspace"
+alias jpt="jupyter notebook"
+
+export omid=mklukas
+export om=$omid@openmind7.mit.edu
+export omx=/om2/user/$omid/om-experiments
+export omsimg=/om2/user/$omid/simg
+alias om="ssh $omid@openmind7.mit.edu"
+alias omxcurrent="$omid@openmind7.mit.edu:/om2/user/$omid/om-experiments/fragmented_maps"
+
+export PATH=$PATH:/Users/mirko/Workspace/mirkos-utilities/scripts
+
+murko (){
+  bash murko.sh $@
+}
+
+omx () {
+  bash omx.sh $@
+}

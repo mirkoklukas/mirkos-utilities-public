@@ -1,0 +1,19 @@
+---
+state:
+    len: 9
+    attach: []
+    abbr:
+        x: x
+        test:y: y
+        test:z: z
+dictitems:
+    x:
+    - 1
+    - 2
+    - 3
+    test:
+        y:
+        - 11
+        - 12
+        - 13
+        z: 'lambda: test.y - x'
